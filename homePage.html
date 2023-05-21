@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tienda en Línea</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+        }
+        
+        main {
+            margin: 20px;
+        }
+        
+        .product {
+            display: inline-block;
+            width: 200px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        
+        .product img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+        }
+        
+        .product h3 {
+            margin: 10px 0;
+        }
+        
+        .product p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tienda en Línea</h1>
+    </header>
+    
+    <main>
+        <div class="product">
+            <img src="imagen1.jpg" alt="Producto 1">
+            <h3>Producto 1</h3>
+            <p>Precio: $10.00</p>
+            <button onclick="agregarAlCarrito(1)">Agregar al carrito</button>
+        </div>
+        
+        <div class="product">
+            <img src="imagen2.jpg" alt="Producto 2">
+            <h3>Producto 2</h3>
+            <p>Precio: $15.00</p>
+            <button onclick="agregarAlCarrito(2)">Agregar al carrito</button>
+        </div>
+        
+        <div class="product">
+            <img src="imagen3.jpg" alt="Producto 3">
+            <h3>Producto 3</h3>
+            <p>Precio: $20.00</p>
+            <button onclick="agregarAlCarrito(3)">Agregar al carrito</button>
+        </div>
+    </main>
+    
+    <script>
+        // Función para agregar productos al carrito
+        function agregarAlCarrito(id) {
+            // Aquí puedes agregar la lógica para manejar el carrito de compras
+            alert("Producto " + id + " agregado al carrito.");
+        }
+    </script>
+</body>
+</html>

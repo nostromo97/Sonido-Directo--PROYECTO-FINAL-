@@ -1,0 +1,87 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 850px;
+    /* ajustar el alto del footer */
+}
+
+.custom-text-color {
+    color: white;
+}
+
+#divVisitanos {
+
+    width: 20%;
+    height: 0%;
+    margin-left: 38%;
+
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin-left: 50%;
+    font-size: larger;
+}
+
+/*Cambia el color a naranja de los títulos de contacto y dirección al pasar el ratón y hacer click*/
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:active {
+    color: orange;
+}
+
+.navbar {
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#botonVisitanos {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    margin-left: 0%;
+}
+.custom-footer{   
+    background-image: url('../images/mixer.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: multiply;
+}
+
+#principalDivLogo {
+    display: block;
+    margin-left: 27%;
+    width: 40%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 0;
+    background-color: black;
+}
+
+#logo {
+
+    width: 100px;
+    height: 90px;
+}
+
