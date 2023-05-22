@@ -55,6 +55,16 @@
                                     <div class="form-outline form-white mb-4">
                                         <input name="password" type="password" id="typePasswordX" class="form-control form-control-lg" />
                                         <label class="form-label" for="typePasswordX">Password</label>
+                                        
+
+                                    </div>
+
+                                    <div>
+                                        <?php
+                                        if (isset($_GET["ERROR"])){
+                                            echo "<h2>Incorrecto. Revise los campos introducidos</h2>";
+                                        }
+                                        ?>
                                     </div>
 
                                    

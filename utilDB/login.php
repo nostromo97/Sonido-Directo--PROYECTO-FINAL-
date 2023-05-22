@@ -3,7 +3,7 @@
   session_start();
 
   if (isset($_SESSION['user_id'])) {
-    header('Location: ../loginPage.html');
+    header('Location: ../loginPage.php');
   }
 
   require 'database.php';
@@ -18,16 +18,18 @@
 
     
 
-    if ($results && ($_POST['password'] === $results['password']))        {
-      $_SESSION['user_id'] = $results['id'];
+    if ($results && ($_POST['password'] === $results['password'])) 
+    {
+      echo"<h2>Bienvenid@</h2>";
       header("Location: ../homePage.html");
+      
+      $_SESSION['user_id'] = $results['id'];
+      
     } else {
-        echo "<h2>Incorrecto. Revise los campos introducidos</h2>";
+      header("Location: ../loginPage.php?ERROR=500");
+      
+      echo "<h2>Incorrecto. Revise los campos introducidos</h2>";
     }
-  }
-
-  else{
-
   }
 
 ?>

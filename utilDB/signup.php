@@ -21,7 +21,7 @@ if (!empty($_POST['nombre']) && !empty($_POST['primer_apellido']) && !empty($_PO
 
   if ($insertQuery->execute()) {
     echo "<h2>Registro exitoso. Ahora puedes iniciar sesión.</h2>";
-    header("Location: ../loginPage.html");
+    header("Location: ../loginPage.php");
   } else {
     echo "<h1>Error al registrar el usuario.</h1>";
   }
