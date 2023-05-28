@@ -1,87 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-    <title>Tienda en Línea</title>
-    <style>
-        /* Estilos CSS */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        
-        h1 {
-            margin: 0;
-        }
-        
-        main {
-            margin: 20px;
-        }
-        
-        .product {
-            display: inline-block;
-            width: 200px;
-            margin: 10px;
-            padding: 10px;
-            border: 1px solid #ccc;
-        }
-        
-        .product img {
-            width: 100%;
-            max-height: 200px;
-            object-fit: cover;
-        }
-        
-        .product h3 {
-            margin: 10px 0;
-        }
-        
-        .product p {
-            margin: 0;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Sonido Directo (AP)</title>
+    <!-- Referencia CSS -->
+    <link rel="stylesheet" type="text/css" href="style/homePage.css">
+    <!-- Referencia Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
-<body>
+
+<body class="bg-black">
+
     <header>
-        <h1>Tienda en Línea</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <a class="navbar-brand" href="homePage.html">
+                        <img id="hpLogo" src="images/LOGOGRANDE.png" alt="Logo">
+                    </a>
+                    
+
+                </div>
+
+
+                <button class="btn btn-primary" id="userBtn"> <svg xmlns="http://www.w3.org/2000/svg" id="iconoLog"
+                        width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                    </svg>USUARIO</button>
+
+                <!-- Botón de logout -->
+                <button class="btn btn-warning" id="logoutBtn"> <svg
+                        xmlns="http://www.w3.org/2000/svg" id="iconoLog" width="16" height="16" fill="currentColor"
+                        class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                        <path fill-rule="evenodd"
+                            d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                    </svg>LOGOUT</button>
+            </div>
+        </nav>
+        <hr>
     </header>
+    <hr><br />
     
-    <main>
-        <div class="product">
-            <img src="imagen1.jpg" alt="Producto 1">
-            <h3>Producto 1</h3>
-            <p>Precio: $10.00</p>
-            <button onclick="agregarAlCarrito(1)">Agregar al carrito</button>
-        </div>
-        
-        <div class="product">
-            <img src="imagen2.jpg" alt="Producto 2">
-            <h3>Producto 2</h3>
-            <p>Precio: $15.00</p>
-            <button onclick="agregarAlCarrito(2)">Agregar al carrito</button>
-        </div>
-        
-        <div class="product">
-            <img src="imagen3.jpg" alt="Producto 3">
-            <h3>Producto 3</h3>
-            <p>Precio: $20.00</p>
-            <button onclick="agregarAlCarrito(3)">Agregar al carrito</button>
-        </div>
-    </main>
+    <form class="form-inline" id="buscador" style="margin-left:38%; margin-top:5px;">
+        <input class="form-control mr-sm-2" type="search" placeholder="🔎 Buscar" aria-label="Buscar">
+        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" style="margin-left:10px;">Buscar</button>
+    </form>
     
+
     <script>
-        // Función para agregar productos al carrito
-        function agregarAlCarrito(id) {
-            // Aquí puedes agregar la lógica para manejar el carrito de compras
-            alert("Producto " + id + " agregado al carrito.");
-        }
+        // Función para mostrar el popup de aviso y redireccionar al hacer clic en el botón de logout
+        var logoutBtn = document.getElementById("logoutBtn");
+        logoutBtn.addEventListener("click", function () {
+            var confirmLogout = confirm("¿Estás seguro de que deseas cerrar sesión?");
+            if (confirmLogout) {
+                alert("¡Hasta luego! Has cerrado sesión correctamente.");
+                window.location.href = "index.html";
+            }
+        });
     </script>
+
+    <br/><hr>
+
+
+
+
+    <!-- Footer de la página -->
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(2, 2, 2, 0.507); color:rgb(226, 226, 226)">
+            ©2023 Copyright Agustín Arcos Reyes
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!-- Referencia a Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
