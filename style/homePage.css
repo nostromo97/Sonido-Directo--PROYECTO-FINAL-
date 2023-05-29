@@ -224,8 +224,9 @@ button {
 
 .contenedor .contenedor-items .item {
     max-width: 200px;
+    color:white;
     margin: auto;
-    border: 1px solid #666;
+    border: 1px solid #f7b80c;
     border-radius: 10px;
     padding: 20px;
     transition: .3s;
@@ -258,7 +259,7 @@ button {
     display: block;
     margin: 10px auto;
     border: none;
-    background-color: black;
+    background-color: white;
     color: #fff;
     padding: 5px 15px;
     border-radius: 5px;
@@ -267,7 +268,7 @@ button {
 
 /* seccion carrito */
 .carrito {
-    border: 1px solid #666;
+    border: 1px solid #cecece;
     width: 35%;
     margin-top: 30px;
     border-radius: 10px;
@@ -282,8 +283,8 @@ button {
 }
 
 .carrito .header-carrito {
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: black;
     text-align: center;
     padding: 30px 0;
 }
@@ -293,7 +294,7 @@ button {
     align-items: center;
     /* justify-content: space-between; */
     position: relative;
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid #fff;
     padding: 20px;
 }
 
@@ -330,7 +331,7 @@ button {
     line-height: 32px;
     text-align: center;
     border-radius: 50%;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     cursor: pointer;
 }
 
@@ -345,14 +346,14 @@ button {
     position: absolute;
     right: 15px;
     top: 15px;
-    color: #000;
+    color: #fff;
     font-size: 20px;
     width: 40px;
     height: 40px;
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     cursor: pointer;
     display: block;
     background: transparent;
@@ -381,7 +382,7 @@ button {
     display: block;
     width: 100%;
     border: none;
-    background: #000;
+    background: #fff;
     color: #fff;
     border-radius: 5px;
     font-size: 18px;

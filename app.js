@@ -1,7 +1,7 @@
 //Variable que mantiene el estado visible del carrito
 var carritoVisible = false;
 
-//Espermos que todos los elementos de la pàgina cargen para ejecutar el script
+//Espermos que todos los elementos de la página carguen para ejecutar el script
 if(document.readyState == 'loading'){
     document.addEventListener('DOMContentLoaded', ready)
 }else{
@@ -96,15 +96,15 @@ function agregarItemAlCarrito(titulo, precio, imagenSrc){
         <div class="carrito-item">
             <img src="${imagenSrc}" width="80px" alt="">
             <div class="carrito-item-detalles">
-                <span class="carrito-item-titulo">${titulo}</span>
-                <div class="selector-cantidad">
+                <span class="carrito-item-titulo" style="color:white;">${titulo}</span>
+                <div class="selector-cantidad" style="color:white;">
                     <i class="fa-solid fa-minus restar-cantidad"></i>
-                    <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                    <input type="text" value="1" class="carrito-item-cantidad" disabled style="color:white;">
                     <i class="fa-solid fa-plus sumar-cantidad"></i>
                 </div>
-                <span class="carrito-item-precio">${precio}</span>
+                <span class="carrito-item-precio" style="color:white;">${precio}</span>
             </div>
-            <button class="btn-eliminar">
+            <button class="btn-eliminar" style="color:white;">
                 <i class="fa-solid fa-trash"></i>
             </button>
         </div>
