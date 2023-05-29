@@ -57,10 +57,26 @@
     <hr><br />
     
     <form class="form-inline" id="buscador" style="margin-left:38%; margin-top:5px;">
-        <input class="form-control mr-sm-2" type="search" placeholder="🔎 Buscar" aria-label="Buscar">
-        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit" style="margin-left:10px;">Buscar</button>
+        <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="🔎 Buscar" aria-label="Buscar">
+        <button id="searchButton" class="btn btn-outline-secondary my-2 my-sm-0" type="submit" style="margin-left:10px;">Buscar</button>
     </form>
     
+    <!--<script>
+        document.getElementById("searchButton").addEventListener("click", function() {
+  var searchTerm = document.getElementById("searchInput").value;
+  var contentElements = document.getElementsByTagName("p");
+  
+  for (var i = 0; i < contentElements.length; i++) {
+    var content = contentElements[i].textContent;
+
+    if (content.toLowerCase().includes(searchTerm.toLowerCase())) {
+      contentElements[i].scrollIntoView({ behavior: 'smooth', block: 'start' });
+      break;
+    }
+  }
+});
+
+    </script>-->
 
     <script>
         // Función para mostrar el popup de aviso y redireccionar al hacer clic en el botón de logout
@@ -76,10 +92,10 @@
 
     <br/>
     <header>
-        <nav style="margin-left: 34%;">
+        <nav style="margin-left: 33.7%;">
           <ul class="categories">
-            <li><a href="#" style="font-size: 30px;">💥¡OFERTAS!💥</a></li>
-            <li><a href="#" style="font-size: 30px;">CONTACTO☎</a></li>
+            <li><a href="#" style="font-size: 28px;">💥¡OFERTAS!💥</a></li>
+            <li><a href="#" style="font-size: 28px;">CONTACTO☎</a></li>
           </ul>
         </nav>
       </header>
@@ -97,7 +113,9 @@
         </div>
       </div>
       
-      
+    
+      <h3 style="color:white; font-size: xx-large; margin-top: 20px; margin-left: 825px; margin-bottom: 5px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">🎛DESTACADOS🎛</h3>
+
       <!-- Productos -->
       <section class="contenedor">
         <!-- Contenedor con los proudctos -->
@@ -106,10 +124,11 @@
             <div class="item">
                 <span class="titulo-item" style="color:white;">Behringer X32</span>
                 <img src="images/x32.jpg" alt="X32" class="img-item">
-                <span class="descripcion-item" style="color:rgb(255, 255, 255);">Mesa digital de 32 canales Behringer X32</span>
+                <span class="descripcion-item" style="color:rgb(255, 255, 255); text-align: center;">Mesa digital de 32 canales Behringer X32</span>
                 <br>
                 <span class="precio-item" style="color:white;">2.539,00€</span>
                 <button class="boton-item" >Agregar al Carrito</button>
+                <span class="stock-item" style="color: rgba(24, 255, 3, 0.911)">✔En Stock</span>
             </div>
 
             <div class="item">
