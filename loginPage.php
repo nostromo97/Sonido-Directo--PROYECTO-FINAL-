@@ -62,7 +62,7 @@
                                     <div>
                                         <?php
                                         if (isset($_GET["ERROR"])){
-                                            echo "<h2>Incorrecto. Revise los campos introducidos</h2>";
+                                            echo "<h3>❌Incorrecto❌</h3>. <br><h4>Revise los campos introducidos</h4>";
                                         }
                                         ?>
                                     </div>
