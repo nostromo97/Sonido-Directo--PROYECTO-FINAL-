@@ -266,6 +266,17 @@ button {
     cursor: pointer;
 }
 
+.contenedor .contenedor-items .item .boton-item-sinstock {
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background-color: rgba(250, 38, 38, 0.911);
+    color: #000000;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /* seccion carrito */
 .carrito {
     border: 1px solid #cecece;
